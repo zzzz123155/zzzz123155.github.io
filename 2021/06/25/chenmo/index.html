@@ -14,11 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="第一次进行的前端技术实战项目">
+  <meta name="description" content="雨，未曾有过片刻的间歇，不断地落在海上，海杀死他们之后，也一味地沉默不语。">
   <meta name="author" content="zzzz123155">
   <meta name="keywords" content="">
   
-  <title>基于wordpress+腾讯云服务器的网站搭建 - Paradise</title>
+  <title>神，一言不发 - Paradise</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -170,12 +170,12 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql.jpg') no-repeat center center;
+         style="background: url('https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/chenmo.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="基于wordpress+腾讯云服务器的网站搭建">
+            <span class="h2" id="subtitle" title="神，一言不发">
               
             </span>
 
@@ -185,8 +185,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-06-19 14:58" pubdate>
-        2021年6月19日 下午
+      <time datetime="2021-06-25 16:51" pubdate>
+        2021年6月25日 下午
       </time>
     </span>
   
@@ -197,7 +197,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.3k 字
+      1.8k 字
     </span>
   
 
@@ -207,7 +207,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      14
+      18
        分钟
     </span>
   
@@ -241,43 +241,16 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">基于wordpress+腾讯云服务器的网站搭建</h1>
+            <h1 style="display: none">神，一言不发</h1>
             
             <div class="markdown-body">
-              <p>写在开头，这个网站的诞生是由于笔者参加了学校的创业项目和“互联网+”创新大赛，由于笔者只学习了html+css的皮毛，因此这次尝试多抱有学习的目的，而这篇梳理也是一个新手的学习所得。</p>
-<h3 id="服务器和域名获取"><a href="#服务器和域名获取" class="headerlink" title="服务器和域名获取"></a>服务器和域名获取</h3><p>这个项目笔者选用的是腾讯云的服务器和域名，阿里云和七牛云等平台也提供了相关服务，可以自由选择。在腾讯云的主页菜单中可以选择所需要的产品，就本项目而言，所需要的产品是一台云服务器和一个域名。</p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql1.jpg" srcset="/img/loading.gif" lazyload alt="腾讯云主页"></p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql2.jpg" srcset="/img/loading.gif" lazyload alt="菜单"></p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql3.jpg" srcset="/img/loading.gif" lazyload alt="云服务器选购界面"></p>
-<p>在此界面可以根据自己的需求选购云服务器，主要区别就是地域和机型。</p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql4.jpg" srcset="/img/loading.gif" lazyload alt="域名注册界面"></p>
-<p>在此界面可以注册自己想要的域名，但不能和其他域名产生重复。</p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql5.jpg" srcset="/img/loading.gif" lazyload alt="笔者选购的云服务器"></p>
-<p>其中比较重要的信息是主IPv4地址中带有“(公)”后缀的一串地址，即公钥，在之后的将域名和服务器绑定会用到它。</p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql6.jpg" srcset="/img/loading.gif" lazyload alt="笔者注册的域名"></p>
-<p>在这个界面可以管理自己的域名，腾讯云在注册的时候需要进行实名认证，同时域名注册之后也要进行实名认证才能进行其他操作。想让域名开始工作，需要手动为域名添加DNS解析，点击域名后面的解析即可添加。</p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql7.jpg" srcset="/img/loading.gif" lazyload alt="DNS解析添加界面"></p>
-<p>其中最下面两条记录是域名自带的，需要手动添加两条记录，一条主机记录为@，另一条主机记录为www，记录值为刚才在云服务器中获取的公钥，添加完这两条记录，域名就会与云服务器绑定，在域名管理界面中现实域名服务状态为正常，域名就在正常工作。但在国内想使用域名，需要向工信部提交备案，备案分为个人性质和企业性质，所需材料也不一样，个人性质的主要材料为身份证，企业性质的主要材料为企业经营执照，本网站为个人性质，建议在备案审批成功后在添加域名解析，未备案网站如果运行有被查封的风险。腾讯云有网站备案的引导，总体过程比较简单，只需要提交相关材料，然后等待一段时间即可，不同地区的审批时间可能不尽相同，可能在3个工作日至15个工作日之间。同时在DNS解析添加界面可以下载网站的SSL证书，这在之后的搭建过程中需要用到，可以提早准备好。</p>
-<p>至此，准备工作基本完成，购买了云服务器和域名，可以进行网站搭建了。</p>
-<h3 id="宝塔面板和wordpress部署"><a href="#宝塔面板和wordpress部署" class="headerlink" title="宝塔面板和wordpress部署"></a>宝塔面板和wordpress部署</h3><p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql8.jpg" srcset="/img/loading.gif" lazyload alt="在此界面登录服务器"></p>
-<p>登录服务器之后安装宝塔面板</p>
-<p>安装教程<br>1、登录腾讯云服务器，执行命令：ssh root@你的服务器IP；<br>2、执行安装命令：</p>
-<p>yum install -y wget &amp;&amp; wget -O install.sh <a target="_blank" rel="noopener" href="http://download.bt.cn/install/install.sh">http://download.bt.cn/install/install.sh</a> &amp;&amp; sh install.sh</p>
-<p>3、执行安装命令后会提示：</p>
-<p>Do you want to install Bt-Panel to the /www directory now?(y/n):</p>
-<p>输入：y回车即可自动安装。<br>4、等待，大概2分钟左右，显示“Complete!”，即安装完毕！<br>5、安装完毕后会显示登录地址、用户名和密码：</p>
-<p>登录地址为：http://你的服务器IP:8888 用户名：admin 密码：随机生成，安装完毕后会有显示</p>
-<p>注意：请记录下你的用户名和密码，登录后台的时候会用到。<br>6、登录宝塔面板后台：http://你的服务器IP:8888<br>7、输入第5步中的账号和密码<br>8、登录后，会提示你安装Web环境，宝塔支持LNMP和LAMP环境，按需选择，点击一键安装.</p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql9.jpg" srcset="/img/loading.gif" lazyload alt="宝塔面板管理界面"></p>
-<p>在软件商店的一键部署中为网站部署wordpress。</p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql10.jpg" srcset="/img/loading.gif" lazyload alt="部署wordpress"></p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql11.jpg" srcset="/img/loading.gif" lazyload alt="添加SSL证书"></p>
-<p>在此界面为网站添加之前下载的SSL证书，否则网站在访问时会显示“不安全”。</p>
-<p>之后注册wordpress账号，登录wordpress平台。建议收藏这个页面，方便对网站进行长期的维护。</p>
-<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql12.jpg" srcset="/img/loading.gif" lazyload alt="wordpress管理界面"></p>
-<p>之后的过程就请自行探索吧，所有diy的工作都会在这个平台进行，可以选择自己喜欢的模板，为网站添加自定义的内容，操作基本不涉及代码层面，几乎全是图形化的操作界面，对新手很友好，一个对前端代码一无所知的小白也能在很短的时间内搭建出属于自己的网站。值得一提的是，wordpress所附带的插件功能异常强大，在想实现一个功能却没有思路的时候，不妨去插件市场中寻找，通常都能找到想要的答案。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>整个网站的搭建运用模板建站的思想，模板建站工程周期短，效率高，已成为当今个人博客和中小企业企业站的首选解决方案，约有41%的个人站和企业站选用wordpress搭建，总体来说，这个项目的实现选择了较为主流且便利的方式，学习成本也较低。</p>
-<h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><p>最后，放上成品<br><a target="_blank" rel="noopener" href="https://www.txqlservice.com/">网站入口</a></p>
+              <p>罪，并不是一般人所想见的，如欺诈，盗窃，而是一个人经过另一个人的人生，却忘记了留在那里的雪泥鸿爪。</p>
+<h2 id="神，一言不发"><a href="#神，一言不发" class="headerlink" title="神，一言不发"></a>神，一言不发</h2><p>因为一个偶然的机会，看到了上文那句话，发现出自远藤周作的《沉默》，便买来读了一读。这本书是远藤周作的代表作，在他去世的时候，选择了两本书与自己为伴，这两本书都是他自己的作品，一本是《深河》，另一本便是《沉默》，可见，作者也十分牵挂这本书。</p>
+<p>整本书讲了一个宗教故事，具有浓厚的天主教气息，来自葡萄牙的神甫前往日本，身负寻找自己的老师和在日本传教的任务，日本在此时极度排斥天主教，想排除西方各国对自己国民的思想控制，大量捕杀天主教徒，用酷刑迫使教徒弃教，用书中的话说，天主教在其他国家能开花，但在日本这片沼泽却无法扎根，天主教对日本来说就是“丑女的爱慕”，而“丑女的爱慕”会给男人带来负担，制造烦恼。</p>
+<p>神甫的老师也是神职人员，深受神甫的尊敬，但有一天神甫却被告知他的老师在“穴吊”（一种刑罚,捆住人的手脚，将人吊在房顶，并在耳后打洞放血，让人能清晰的感受到自己的痛苦)的折磨下选择了弃教，他不能相信，决心前往日本调查老师的踪迹，并在日本寻找天主教的残留教徒，为他们带来信仰的曙光。神甫选择了一个叫吉次郎的日本人当做向导，这个人物贯穿了文章始终，书中将他描述成了一个信仰天主教的弱者，他虽然是信徒。但在官差威胁下，也会毫不犹豫的弃教，他是一个软弱与刚强的结合体，性格处处充斥着矛盾，我认为塑造的很成功。在神甫到达日本后，留居与一个渔村之中，这个渔村的遗民都是天主教徒，在见到神甫之后，异常激动，但因为日本的现状，神甫必须隐藏起来，村民要小心翼翼地隐藏这份感情，村里生活条件恶劣，神甫每天都要躲藏，对抗虱子，吃粗粝的饭食，与之前在葡萄牙的红酒面包天差地别，但不久之后，神甫藏在村子的事被告密了，是谁泄密呢？读者也会疑惑，作者在这一阶段并未展开这一细节。在官差到来之后，掳走了一名人质，另有三人前去谈判，官差只想让他们弃教，只需要践踏圣象，哪怕只是形式上的，但三人根本不愿妥协，也不远说出神甫下落，最终被处以“水磔”（一种刑罚，将人绑在柱子上，置于海岸，让海水不断冲刷人体，几日之后便会被折磨致死），神甫第一次产生了动摇，面对这些像牛马一样劳动，像牛马一样死去的底层人民，神甫产生了疑问，为什么主要赐予人们这么多的苦难？为什么天地之间只有沉默？为什么殉道者的死亡如此平静，不值一提？</p>
+<p>之后吉次郎找到神甫，坦白是自己告密，希望能在神甫面前忏悔，但神甫憎恨眼前这个男人，拒绝了他的请求，之后吉次郎照顾神甫，为神甫寻觅吃喝，但他又一次背叛了神甫，神甫被官差带走了，这时，神甫想起来耶稣对犹大说的话：去吧，去作你所作的吧。神甫并未能完全把握这句话中的感情。神甫开始了长期的囚牢生活，在这段时日，他目睹了教徒的悲惨生活，目睹了人像牛马一样在烈日下被斩首，尸体随处丢弃，但令他感到奇怪的是，他并没有被施以酷刑，生活条件反而还在改善，他很快意识到，这是腐蚀他精神的手段，他拒绝了一日三次饭食供应，拒绝了柔软的草席，虽然依然会疑惑为什么神一直保持沉默，但在这种平静，悠闲的生活里，神甫继续坚定自己的信仰，熬过一天又一天。</p>
+<p>但很快，压死骆驼的最后一根稻草到来了，神甫见到了他弃教的老师，老师现在以日本人的身份生活，继承了死去的日本人的妻女，他劝说神甫弃教，成为对日本有用的人，神甫根本不接受，也不能相信曾经信仰坚定的老师怎么变成了这副模样，但他很快就明白了，一日夜晚，几个信徒被处以“穴吊”之刑，神甫只能听到他们此起彼伏的呻吟声，只要神甫践踏圣象，宣布弃教，这些人就可以得救，神甫犹豫了，主会拯救众人，但他自始至终都一言不发，如果弃教，就能拯救眼前实实在在的生命，教义究竟是什么？不是使人获得幸福吗，为什么眼前只能看到痛苦？最终，神甫蜕变了，他弃教了，那几个信徒也因此得救，一切平静，施以救赎的人没有任何光芒加身，以往那些殉教者的死亡，只有无尽的沉默做旁白，神甫看清了，主的容貌在他心中由绝对的美变成了他脚下圣象上那张痛苦，变形的脸，就是那张背负了所有人践踏的脸，主在人们受难时保持沉默，在圣象遭到践踏时又背负一切，这很矛盾，也很荒诞。神甫的信仰经历了崩塌与重建，他依然信仰着天主教，但他超越了形式上的束缚，在最后吉次郎找他忏悔时，他作为“弃教的保罗”却给予了吉次郎只有神职人员才能给予的奥迹，神甫最终得到了他的答案：“那个人并非沉默着。纵使那个人是沉默着，到今天为止，我的人生本身就在诉说着那个人。”</p>
+<p>我认为神甫最终得到了救赎，他回到了主的身边，抛却了对主的怀疑，坚定的践行自己内心的教义，远藤周作认为在结尾神甫对天主教教义的认识更接近天主教的教义，我对天主教知之甚少，但我觉得最根本的教义是人的幸福，对可能存在的神明更多的是怀有敬畏，但作为人，对整个人类，不可能始终保持沉默，神可以一言不发，但人会永远保持诉说的状态，人性会时时提醒我们谨记留在他人内心的雪泥鸿爪。</p>
 
             </div>
             <hr>
@@ -287,7 +260,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+                      <a class="hover-with-bg" href="/categories/%E9%98%85%E8%AF%BB/">阅读</a>
                     
                   </div>
                 
@@ -305,18 +278,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/06/25/chenmo/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">神，一言不发</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/06/16/shequyanjiu/">
-                        <span class="hidden-mobile">基于社会资本理论的虚拟社区对社会资本优化的研究</span>
+                      <a href="/2021/06/19/txql/">
+                        <span class="hidden-mobile">基于wordpress+腾讯云服务器的网站搭建</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
