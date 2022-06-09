@@ -1,0 +1,493 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="一次结课作业">
+  <meta name="author" content="zzzz123155">
+  <meta name="keywords" content="">
+  
+  <title>米花之味，一“合”足矣 - Paradise</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.6.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"zzzz123155.github.io","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 80vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Paradise</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/mihua.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="米花之味，一“合”足矣">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-06-09 21:45" pubdate>
+        2022年6月9日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      24
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">米花之味，一“合”足矣</h1>
+            
+            <div class="markdown-body">
+              <p>写在开头，这是一次结课作业，也是电影《米花之味》的观后感</p>
+<h2 id="米花之味，一“合”足矣"><a href="#米花之味，一“合”足矣" class="headerlink" title="米花之味，一“合”足矣"></a>米花之味，一“合”足矣</h2><p>米花，在广西壮族自治区玉林市地区是有名的春节期间的时令小吃，吃起来又香又甜，在《米花之味》这部电影中，米花这个意象贯穿始终，为何米花能具有如此的分量，我认为是因为米花承载了“合”的观念，人与自然的合，人与人的合，传统与现代的合，这种观念带有一种融会贯通的气魄，我认为这部电影想表达的正是这种“合”的观念，传统与现代不是二元对立，而是一体两面，传统与现代终将走向调和。</p>
+<p>电影讲述了一个在城市里工作的女人回到乡下老家生活的故事，女人身上的现代性与乡下的传统性产生了激烈冲突，但最终传统与现代实现了调和。我将把这部影片拆解，抓取其中几个我认为较为重要的细节，逐一分析，从破碎的情节的整合中找到这条通往调和的道路。</p>
+<p>电影中有数个抽烟的情节，尽管村民抽的都是具有现代气息的烤烟，但抽烟的工具却是竹筒，烤烟明明如此方便，可以直接放入口中点燃吸食，为什么还要使用竹筒呢？是习俗吗？是传统吗？但不论它是不是传统，它都已经被现代渗透了，把方便的东西变得复杂，这是传统与现代的畸形结合，在这个村子中的某种对立也可以由此看出。之后是回乡的女人用嫌弃的眼神看着村民们在餐桌旁丢弃的骨头、烟头和瓜子壳，这是便不单单是传统与现代的冲突了，这也展现了野蛮与文明的冲突，在同一个场景中，村民畅谈自己的创业计划，并且向女人索要城市里的资本注入，女人笑了笑，借口去看看饭熟了没有便离开了，这段对话展示了乡下人的无知和简单思维，没有见过更广阔的世界，便会局限于自己的天地中，以为自己的简单想法一定能成功，这里面凸显了城乡之间的冲突，但既然是冲突，是对立，便是双向的，不只是乡下人的无知浅薄对上了城里人的广阔见识，也是城里人的高高在上对上了乡下人的身居下等，难道说乡下人的创业思路真的没有一点合理性吗？难道说城里人的轻蔑一笑真的就那么理所当然吗？不可否认，城乡之间确实存在的较大的物质和精神的差距，但有些时候是不是人们的偏见和思维定式越过了这些客观差距呢？</p>
+<p>在一座庙前，孩子们坐在台阶上玩手机，被问到为什么在这里玩手机，孩子们回答到：“因为这里有WiFi”，显然，新一代并不明白庙宇意味着什么，吸引他们来此聚集的是WiFi，而不是佛道，在手机并未出现的年代，庙宇只是庙宇，是严肃的，但如今这份严肃已经在新生代中被消解了，又是一处明显的传统与现代的冲突，这也会引出代际之间的割裂，现代化点亮了村里的电灯，但是否也蚕食了年青一代呢？电子游戏本不是成绩差与教育失败的借口，但是在教育本就薄弱的偏远少数民族乡村地区，电子游戏的负面影响会被大大激发，甚至盖过其正面作用，这种情况下的电子游戏不再是教育的替罪羊，而是真真切切地带有了一些毒药的性质，换做一个生长在教育条件较好地区的孩子，纵使他在年幼时存在偏差行为，他被矫正的概率依然较大，最终在长大成人后，幼年偏差行为的不良影响会被削减至较低水平，但在偏远地区，少数民族地区，乡村地区的孩子可能就没那么幸运了，现代化让城市高速发展，但可能在荼毒着乡村的未来。回到那座庙前，女孩子只有脱了鞋才能坐上或走上台阶，而男孩子就不用，这体现了性别的对立，这种糟粕也隐匿在传统中被流传下来了，显然，这种传统不在调和之列，而是应当摒弃。从城里归来的女人想要踏上台阶，但却被孩子们阻止了，因为她穿着鞋，她愤然离去，孩子们不清楚庙宇意味着什么，却谨记女人不能穿鞋踏上台阶，一面享用现代化带来的电子游戏，一面却又充当着封建礼教的代言人，即使是在同一个个体自身，也能看出来传统与现代的撕裂与冲突。<br>值得一提的是，这部影片中的小孩子也具有代表性，另我感到恐惧，孩子们身上充满了单纯，但是是单纯的恶，这是相当可怕的东西，《悲惨世界》开篇提到“穷困使男子潦倒，饥饿使妇女堕落，黑暗使儿童羸弱”，黑暗是精神世界的黑暗，羸弱是心灵的羸弱，这份单纯的恶便悄然孕育，睁着一双充满童真的眼睛，双脚却深陷泥淖之中，令人心痛。</p>
+<p>之后，有个孩子患了重病，社工建议去找大医院看看，但村民一致认为应该请来山神寻求答案，山神如期而至，孩子也溘然长逝，借山神之口，导演道出了人与自然的冲突，山神指着电灯说之前都是用蜡烛，指责村民允许现代化的发展，这是固守传统，抱残守缺的人们的化身，这股力量将人们极力将人们拖入不良传统的深渊，带领人们背离科学，于此同时，还有另一股力量。当村民去祭拜石佛时，大门上却写到“景区今日休息”，我认为这便隐晦地道出了那另一股力量，如果说传统的力量的吸力，那么这种力量就是斥力，那部分在糟粕中觉醒的人来到现代的大门前，但却被拒之门外，糟粕吸引着人们，进步将人们拒斥，在这个时刻，冲突似乎显得不那么重要了，人们被抛向了一个混沌之地，陷于糟粕，却无法破局，野蛮与落后便会被渐渐放大，深陷其中的人们便会被现代化的进程无情抛弃，现代化虽然具有碾压一切的力量，但完全开放这种力量带来的打击同样是毁灭性的，当代人的精神危机已经印证了这一点，宗教的神秘面纱被扯下以后，科学占据高位，现代化在物质上赋予了人们前所未有的权能，但也挖空了人们的精神世界，一切都来的太快了，人们还来不及寻找一片新的沼泽安身立命，旧有的精神家园却已破败不堪，这群质朴的人儿会被现代化的洪流冲得七零八落，现实似乎很绝望，但真的无计可施了吗？从城里归来的女人最终脱下鞋子走上了台阶，也和女儿在石佛面前跳起了传统的舞蹈，在电影的结尾，导演给出了他的答案，我领会到得救之道，在于调和，代表现代的女人向传统委身，在封建礼教中处于弱势的女人向糟粕委身，但委身是终点吗，女人跨越了那道写着“景区今日休息”的门，向石佛献出舞蹈，传统与现代的调和，对封建糟粕的摒弃与超越，文明对野蛮的征服，便在此刻完成了，影片在舞蹈中结束，希望的微光也在舞蹈中被开掘出来了。</p>
+<p>那么社工能做些什么呢，我觉得社工就像水，上善若水，水至善利万物而不争，水既能反射也能折射，但反射出的不是这份微光的幻象，而是真真切切的光，折射也不是歪曲了光，而是让光照在恰当的地方，社工本身也是调和进程的一部分，在时代洪流面前，社工的力量终究还是太微小了，但是润滑，修补，调整，引导，这是社工确实可以做到的事情，社工不能也不必为弱势群体抵挡时代的冲击，但可以软化这份冲击，让调和的进程可以顺利开展。我觉得真正的伟大并不是掌握了多少高高在上且精妙绝伦的思想，而是将这些思想从精致的玻璃箱中取出，加以调和，投向饱经沧桑的人们，社工能完成这项伟大的事业，能写好这个“合”字。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%B1%BB/">社会学类</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/05/12/xiguan/">
+                        <span class="hidden-mobile">习惯成自然</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/twikoo@1.3.0/dist/twikoo.all.min.js', function() {
+        twikoo.init({
+          el: '#twikoo',
+          envId: 'twikoo-0g5ghvjibfc3f076',
+          region: 'ap-shanghai',
+          path: 'window.location.pathname',
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="第一次进行的前端技术实战项目">
+  <meta name="author" content="zzzz123155">
+  <meta name="keywords" content="">
+  
+  <title>基于wordpress+腾讯云服务器的网站搭建 - Paradise</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.6.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"zzzz123155.github.io","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 80vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Paradise</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="基于wordpress+腾讯云服务器的网站搭建">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-06-19 14:58" pubdate>
+        2021年6月19日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      14
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">基于wordpress+腾讯云服务器的网站搭建</h1>
+            
+            <div class="markdown-body">
+              <p>写在开头，这个网站的诞生是由于笔者参加了学校的创业项目和“互联网+”创新大赛，由于笔者只学习了html+css的皮毛，因此这次尝试多抱有学习的目的，而这篇梳理也是一个新手的学习所得。</p>
+<h3 id="服务器和域名获取"><a href="#服务器和域名获取" class="headerlink" title="服务器和域名获取"></a>服务器和域名获取</h3><p>这个项目笔者选用的是腾讯云的服务器和域名，阿里云和七牛云等平台也提供了相关服务，可以自由选择。在腾讯云的主页菜单中可以选择所需要的产品，就本项目而言，所需要的产品是一台云服务器和一个域名。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql1.jpg" srcset="/img/loading.gif" lazyload alt="腾讯云主页"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql2.jpg" srcset="/img/loading.gif" lazyload alt="菜单"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql3.jpg" srcset="/img/loading.gif" lazyload alt="云服务器选购界面"></p>
+<p>在此界面可以根据自己的需求选购云服务器，主要区别就是地域和机型。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql4.jpg" srcset="/img/loading.gif" lazyload alt="域名注册界面"></p>
+<p>在此界面可以注册自己想要的域名，但不能和其他域名产生重复。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql5.jpg" srcset="/img/loading.gif" lazyload alt="笔者选购的云服务器"></p>
+<p>其中比较重要的信息是主IPv4地址中带有“(公)”后缀的一串地址，即公钥，在之后的将域名和服务器绑定会用到它。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql6.jpg" srcset="/img/loading.gif" lazyload alt="笔者注册的域名"></p>
+<p>在这个界面可以管理自己的域名，腾讯云在注册的时候需要进行实名认证，同时域名注册之后也要进行实名认证才能进行其他操作。想让域名开始工作，需要手动为域名添加DNS解析，点击域名后面的解析即可添加。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql7.jpg" srcset="/img/loading.gif" lazyload alt="DNS解析添加界面"></p>
+<p>其中最下面两条记录是域名自带的，需要手动添加两条记录，一条主机记录为@，另一条主机记录为www，记录值为刚才在云服务器中获取的公钥，添加完这两条记录，域名就会与云服务器绑定，在域名管理界面中现实域名服务状态为正常，域名就在正常工作。但在国内想使用域名，需要向工信部提交备案，备案分为个人性质和企业性质，所需材料也不一样，个人性质的主要材料为身份证，企业性质的主要材料为企业经营执照，本网站为个人性质，建议在备案审批成功后在添加域名解析，未备案网站如果运行有被查封的风险。腾讯云有网站备案的引导，总体过程比较简单，只需要提交相关材料，然后等待一段时间即可，不同地区的审批时间可能不尽相同，可能在3个工作日至15个工作日之间。同时在DNS解析添加界面可以下载网站的SSL证书，这在之后的搭建过程中需要用到，可以提早准备好。</p>
+<p>至此，准备工作基本完成，购买了云服务器和域名，可以进行网站搭建了。</p>
+<h3 id="宝塔面板和wordpress部署"><a href="#宝塔面板和wordpress部署" class="headerlink" title="宝塔面板和wordpress部署"></a>宝塔面板和wordpress部署</h3><p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql8.jpg" srcset="/img/loading.gif" lazyload alt="在此界面登录服务器"></p>
+<p>登录服务器之后安装宝塔面板</p>
+<p>安装教程<br>1、登录腾讯云服务器，执行命令：ssh root@你的服务器IP；<br>2、执行安装命令：</p>
+<p>yum install -y wget &amp;&amp; wget -O install.sh <a target="_blank" rel="noopener" href="http://download.bt.cn/install/install.sh">http://download.bt.cn/install/install.sh</a> &amp;&amp; sh install.sh</p>
+<p>3、执行安装命令后会提示：</p>
+<p>Do you want to install Bt-Panel to the /www directory now?(y/n):</p>
+<p>输入：y回车即可自动安装。<br>4、等待，大概2分钟左右，显示“Complete!”，即安装完毕！<br>5、安装完毕后会显示登录地址、用户名和密码：</p>
+<p>登录地址为：http://你的服务器IP:8888 用户名：admin 密码：随机生成，安装完毕后会有显示</p>
+<p>注意：请记录下你的用户名和密码，登录后台的时候会用到。<br>6、登录宝塔面板后台：http://你的服务器IP:8888<br>7、输入第5步中的账号和密码<br>8、登录后，会提示你安装Web环境，宝塔支持LNMP和LAMP环境，按需选择，点击一键安装.</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql9.jpg" srcset="/img/loading.gif" lazyload alt="宝塔面板管理界面"></p>
+<p>在软件商店的一键部署中为网站部署wordpress。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql10.jpg" srcset="/img/loading.gif" lazyload alt="部署wordpress"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql11.jpg" srcset="/img/loading.gif" lazyload alt="添加SSL证书"></p>
+<p>在此界面为网站添加之前下载的SSL证书，否则网站在访问时会显示“不安全”。</p>
+<p>之后注册wordpress账号，登录wordpress平台。建议收藏这个页面，方便对网站进行长期的维护。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/txql12.jpg" srcset="/img/loading.gif" lazyload alt="wordpress管理界面"></p>
+<p>之后的过程就请自行探索吧，所有diy的工作都会在这个平台进行，可以选择自己喜欢的模板，为网站添加自定义的内容，操作基本不涉及代码层面，几乎全是图形化的操作界面，对新手很友好，一个对前端代码一无所知的小白也能在很短的时间内搭建出属于自己的网站。值得一提的是，wordpress所附带的插件功能异常强大，在想实现一个功能却没有思路的时候，不妨去插件市场中寻找，通常都能找到想要的答案。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>整个网站的搭建运用模板建站的思想，模板建站工程周期短，效率高，已成为当今个人博客和中小企业企业站的首选解决方案，约有41%的个人站和企业站选用wordpress搭建，总体来说，这个项目的实现选择了较为主流且便利的方式，学习成本也较低。</p>
+<h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><p>最后，放上成品<br><a target="_blank" rel="noopener" href="https://www.txqlservice.com/">网站入口</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/06/25/chenmo/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">神，一言不发</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/06/16/shequyanjiu/">
+                        <span class="hidden-mobile">基于社会资本理论的虚拟社区对社会资本优化的研究</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/twikoo@1.3.0/dist/twikoo.all.min.js', function() {
+        twikoo.init({
+          el: '#twikoo',
+          envId: 'twikoo-0g5ghvjibfc3f076',
+          region: 'ap-shanghai',
+          path: 'window.location.pathname',
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
