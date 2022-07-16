@@ -1,0 +1,1075 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="理解，而后刺破">
+  <meta name="author" content="zzzz123155">
+  <meta name="keywords" content="">
+  
+  <title>刺破 - Paradise</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.6.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"zzzz123155.github.io","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 80vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Paradise</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/xinli.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="刺破">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-07-09 15:11" pubdate>
+        2022年7月9日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      7.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      77
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">刺破</h1>
+            
+            <div class="markdown-body">
+              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是一篇搁置了许久的文章，本学期阅读了《心理学导论》，这本书并不探讨许多艰深难懂的理论，作为导论，较为适合我这种心理学的门外汉观看，但毕竟是一本具有专业性的书，笔记还是必要的，因此这篇文章将以与《让伟大再次伟大》这篇文章相同的结构书写，分为笔记和感想两部分，笔记部分的内容多为名词解释，基本全部是细碎的知识点，理解与思考的内容我会放在感想部分，总的说来，这本书让我与自己的距离更近了，并不同于以往灵魂上的探究与哲学思辨，这次的体验是由实验和科学理论带来的，是一次从不同角度切入且相当奇妙的体验。</p>
+<h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2><ul>
+<li><p>要过度学习，自律学习</p>
+</li>
+<li><p>设定场景，不必非要指向学习，先习惯一个适合学习的场景</p>
+</li>
+</ul>
+<h3 id="心理学的目标"><a href="#心理学的目标" class="headerlink" title="心理学的目标"></a>心理学的目标</h3><blockquote>
+<ul>
+<li><p>描述行为(行为本质)</p>
+</li>
+<li><p>理解行为(行为为什么会发生)</p>
+</li>
+<li><p>预测行为</p>
+</li>
+<li><p>控制行为</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>伪心理学：无批判接受顺言：当某种说法貌似正确或者能另方方面面都皆大欢喜的时候，人们就会倾向于相信它(星座)</p>
+</li>
+<li><p>确认偏向：人们只记住或关注与自己的期望相符的信息而忽略不相符信息的倾向</p>
+</li>
+<li><p>巴纳姆效应：越是使用空泛、笼统的语言描述他人的情况，就越能让其感到这些描述是准确的</p>
+</li>
+</ul>
+<h3 id="早期心理学学派"><a href="#早期心理学学派" class="headerlink" title="早期心理学学派"></a>早期心理学学派</h3><blockquote>
+<ul>
+<li><p>内省法：通过检验自己的思想、情感和感觉，了解内心活动的方法</p>
+</li>
+<li><p>机能主义：一种心理学派，关注的是各种行为和心理机能在人对环境的适应过程中所起的作用</p>
+</li>
+<li><p>结构主义：一种思想流派，它把感觉和个人体验分解成一个个基本要素来加以分析(已消失)</p>
+</li>
+<li><p>行为主义：一个心理学派，强调对外显的、可观察行为的研究</p>
+</li>
+<li><p>认知行为主义：将行为主义原理与认知(知觉、思维、预期)结合在一起解释行为的方法</p>
+</li>
+<li><p>格式塔心理学：一个心理学派，强调将思维、学习和知觉作为整体加以研究，而不是分解开来</p>
+</li>
+<li><p>精神分析法：弗洛伊德心理治疗方法，注重对无意识冲突的研究</p>
+</li>
+<li><p>新弗洛伊德学派：接受了弗洛伊德理论中的基本理念，但对部分理论加以修正，以适应自己观念的心理学家</p>
+</li>
+<li><p>心理动力学理论：强调内部冲突、动机和无意识力量的行为理论</p>
+</li>
+<li><p>人本主义：一种心理学理论，强调对人的经验、人的问题、人的潜能和人的理想的研究</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="心理学现状——关于行为的三大互补观点"><a href="#心理学现状——关于行为的三大互补观点" class="headerlink" title="心理学现状——关于行为的三大互补观点"></a>心理学现状——关于行为的三大互补观点</h3><blockquote>
+<ul>
+<li><p>生物学观点：根据生物学原理来解释人类行为的尝试(神经科学，进化心理学)&gt;</p>
+</li>
+<li><p>进化心理学：试图用进化论和遗传学来解释人类行为的研究领域</p>
+</li>
+<li><p>心理学观点：一种传统观点，认为行为是由个人的心理作用所造成</p>
+</li>
+<li><p>积极心理学：对人类的优点、美德和有效机能的研究</p>
+</li>
+<li><p>社会文化观点：关注社会和文化背景在影响个人行为方面的重要性</p>
+</li>
+<li><p>文化相对性：这种观念认为，对人们行为的判断必须与其所属文化中的价值观相联系</p>
+</li>
+<li><p>社会规范：定义各团体中可接受和可预期的成员行为的准则</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="非实验性研究方法"><a href="#非实验性研究方法" class="headerlink" title="非实验性研究方法"></a>非实验性研究方法</h3><blockquote>
+<ul>
+<li><p>自然观察法：在自然环境中对行为进行观察</p>
+</li>
+<li><p>观察者效应：被观察者由于意识到自己被观察而发生的行为改变</p>
+</li>
+<li><p>观察者偏差：观察者对观察结果和知觉加以歪曲，使其满足自己的预期的倾向</p>
+</li>
+<li><p>拟人化错误：这种错误是把人类的思想、情感或动机加到动物身上，作为解释动物行为的方法</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="大脑皮质"><a href="#大脑皮质" class="headerlink" title="大脑皮质"></a>大脑皮质</h3><blockquote>
+<ul>
+<li><p>额叶：与运动、自我感知以及高级心理功能有关的皮质区</p>
+</li>
+<li><p>初级运动区(初级运动皮质)：与控制运动有关的大脑皮质区</p>
+</li>
+<li><p>初级躯体感觉区(初级躯体感觉皮质)：接收全身感觉信息的区域</p>
+</li>
+<li><p>初级听觉区：位于颞叶，听觉信息首先登记的区域</p>
+</li>
+<li><p>初级视觉区：最先接收来自眼镜的信息的枕叶区域</p>
+</li>
+<li><p>联合区(联合皮质)：大脑皮质中除初级感觉区和初级运动区以外的全部区域</p>
+</li>
+<li><p>布洛卡区：大脑中与语法和发音相关的一个语言区</p>
+</li>
+<li><p>威尔尼克区：大脑中与语言理解有关的一个区域</p>
+</li>
+<li><p>前额叶区(前额皮质)：位于额叶前端，参与自我知觉，推理和计划</p>
+</li>
+<li><p>顶叶：负责躯体感觉信息登记的大脑皮质区</p>
+</li>
+<li><p>颞叶：包括听觉信息登记区在内的大脑皮质区</p>
+</li>
+<li><p>枕叶：视觉信息登记的大脑皮质区</p>
+</li>
+<li><p>视觉失认症：不能识别看见的物体(但能通过触摸识别)</p>
+</li>
+<li><p>面孔失认症：对熟悉面孔的知觉障碍</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="认知发展"><a href="#认知发展" class="headerlink" title="认知发展"></a>认知发展</h3><blockquote>
+<ul>
+<li><p>同化：指将现有的心理图式用于新的环境(脑子里有鸭子的概念，认出鸭子)</p>
+</li>
+<li><p>顺应：修正当前的心理图式使之符合新的需求</p>
+</li>
+<li><p>客体恒常性：婴儿获得的概念，即物体在看不见时依然存在</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="道德发展水平"><a href="#道德发展水平" class="headerlink" title="道德发展水平"></a>道德发展水平</h3><blockquote>
+<ul>
+<li><p>前习俗水平：科尔伯格提出的道德发展水平之一，这一水平的人根据行为后果(如惩罚、奖励或互惠)做出道德判断</p>
+</li>
+<li><p>习俗水平：科尔伯格提出的道德发展水平之一，这一水平的人根据他人期望、规则和一般行为标准做出道德判断</p>
+</li>
+<li><p>后习俗水平：科尔伯格提出的道德发展水平之一，这一水平的人能够在认真检验事实和自主选择道德原则的基础上做出自己的道德判断</p>
+</li>
+<li><p>最好的道德是综合了公平与关爱、理性和情感</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="格式塔组织原则"><a href="#格式塔组织原则" class="headerlink" title="格式塔组织原则"></a>格式塔组织原则</h3><blockquote>
+<ul>
+<li><p>邻近原则：当其他条件一致的情况下，在空间上彼此接近的刺激物更容易被知觉为一个整体</p>
+</li>
+<li><p>相似性原则：那些在大小、形状、颜色或形式上相似的刺激物更容易被知觉为一个整体</p>
+</li>
+<li><p>连续性原则：简单和连续性</p>
+</li>
+<li><p>闭合原则：指人倾向于将一个图形知觉为一个连续完整的形状</p>
+</li>
+<li><p>接近原则：时间或者空间中的靠近，通常被认为是造成因果认知的原因</p>
+</li>
+<li><p>同域原则：处于同一地带或同一区域的刺激物更容易被视为一组</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="知觉恒常性"><a href="#知觉恒常性" class="headerlink" title="知觉恒常性"></a>知觉恒常性</h3><blockquote>
+<ul>
+<li><p>大小恒常性：当视网膜呈现的客体图像大小改变时，人们对这个客体大小的知觉保持不变</p>
+</li>
+<li><p>形状恒常性：当视角不同时，客体投射在视网膜的视像会变形，而人们对客体形状的知觉会保持不变</p>
+</li>
+<li><p>亮度恒常性：在光照条件改变时，人们对这个客体表面亮度的知觉保持不变</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>更好地观察生活</p>
+</li>
+<li><p>记得知觉是关于现实的建构</p>
+</li>
+<li><p>打破知觉习惯，不受习惯化的影响</p>
+</li>
+<li><p>寻求不寻常的经历</p>
+</li>
+<li><p>克服知觉定势</p>
+</li>
+<li><p>避免受动机或情绪的影响</p>
+</li>
+<li><p>养成进行真实性检验的习惯</p>
+</li>
+<li><p>注意</p>
+</li>
+</ul>
+<h3 id="惩罚的副作用"><a href="#惩罚的副作用" class="headerlink" title="惩罚的副作用"></a>惩罚的副作用</h3><blockquote>
+<ul>
+<li><p>逃避学习：学习做出某种反应以结束厌恶刺激</p>
+</li>
+<li><p>回避学习：学习做出某种反应以延缓或阻止不适感</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="自我管理行为"><a href="#自我管理行为" class="headerlink" title="自我管理行为"></a>自我管理行为</h3><blockquote>
+<p>普雷马克原则：任何一个经常发生的或占优势的反应都可以用于强化一个不经常发生的反应</p>
+</blockquote>
+<h3 id="改变坏习惯的有效方法"><a href="#改变坏习惯的有效方法" class="headerlink" title="改变坏习惯的有效方法"></a>改变坏习惯的有效方法</h3><blockquote>
+<ul>
+<li><p>改变反应：做出一个新的、同样能够得到强化的反应(以新代旧)</p>
+</li>
+<li><p>消退：远离诱惑，即发现那些不良习惯的强化物，并移走它们，避开它们，或推迟它们的强化作用</p>
+</li>
+<li><p>反应链：打破反应链，主要方法是打乱导致不良反应出现的事件链</p>
+</li>
+<li><p>线索和前因：控制隐患，即设法避免、减少或消除可能引起坏习惯的刺激</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="记忆测量"><a href="#记忆测量" class="headerlink" title="记忆测量"></a>记忆测量</h3><blockquote>
+<ul>
+<li><p>舌尖现象(TOT)：感到似乎知道，但又无法把信息提取出来的现象</p>
+</li>
+<li><p>系列位置效应：对一个记忆系列进行回忆时，对其中段内容的回忆出现错误最多的现象</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="遗忘"><a href="#遗忘" class="headerlink" title="遗忘"></a>遗忘</h3><blockquote>
+<ul>
+<li><p>状态依存学习：记忆在提取时受到储存时的机体状态影响，当两个时刻的机体状态匹配时，记忆效果最好</p>
+</li>
+<li><p>倒摄干扰：新的学习抑制了对先前学习内容的记忆</p>
+</li>
+<li><p>前摄干扰：先前的学习抑制了对后面学习内容的记忆</p>
+</li>
+<li><p>正迁移：一种已掌握的技能有助于对另一种新技能的掌握</p>
+</li>
+<li><p>负迁移：一种已掌握的技能与掌握一种新技能的要求之间出现冲突</p>
+</li>
+<li><p>压抑：无意识地排除不想保存的记忆</p>
+</li>
+<li><p>压制：有意识地要求自己不去想某事，尽力将其排除于意识之外</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="改善记忆"><a href="#改善记忆" class="headerlink" title="改善记忆"></a>改善记忆</h3><h4 id="编码策略"><a href="#编码策略" class="headerlink" title="编码策略"></a>编码策略</h4><blockquote>
+<ul>
+<li><p>精细加工：多复述，不是机械复述，而是寻找意义和建立新知识与已有知识的联系</p>
+</li>
+<li><p>选择：找重点</p>
+</li>
+<li><p>组织：重组需要记忆的内容，变成利于记忆的样子，概括总结</p>
+</li>
+<li><p>整体学习和部分学习相结合</p>
+</li>
+<li><p>系列位置效应：多看中间的内容</p>
+</li>
+<li><p>记忆线索：把与需要记忆的内容有联系的内容当做线索</p>
+</li>
+<li><p>过度学习</p>
+</li>
+<li><p>分散学习</p>
+</li>
+</ul>
+</blockquote>
+<h4 id="提取策略"><a href="#提取策略" class="headerlink" title="提取策略"></a>提取策略</h4><blockquote>
+<ul>
+<li><p>提取练习：对学习进行反馈，20%时间读书，80%时间背诵可取得最佳记忆效果</p>
+</li>
+<li><p>复习：在分散学习和过度学习的基础之上</p>
+</li>
+<li><p>利用策略进行回忆：由部分回忆整体</p>
+</li>
+<li><p>睡眠与记忆：睡眠可以强化记忆</p>
+</li>
+<li><p>饥饿与记忆：人在饥饿时记忆效果最差</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="记忆术的基本原则"><a href="#记忆术的基本原则" class="headerlink" title="记忆术的基本原则"></a>记忆术的基本原则</h3><blockquote>
+<ul>
+<li><p>赋予信息以意义</p>
+</li>
+<li><p>增加信息的熟练度：与过往知识连接</p>
+</li>
+<li><p>形成图片记忆：将信息变为心理图片，把图片想象的生动一些</p>
+</li>
+<li><p>建立特殊联系：夸张、离奇的心理联系</p>
+</li>
+<li><p>注意记忆术在信息存储的早期阶段最有效，在随后的阶段最好能采用其他的记忆手段进行精细复述</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><blockquote>
+<p>语言相对性假说：这种观点认为，我们所使用的语词不仅反映了我们的思维，还能塑造我们的思维</p>
+</blockquote>
+<h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><blockquote>
+<ul>
+<li><p>固着：重复一种错误解答或错误反应的倾向，看不到其他的选择</p>
+</li>
+<li><p>功能性固着：由于思维受限而不能看出熟悉物品的新用途或新功能</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="直觉"><a href="#直觉" class="headerlink" title="直觉"></a>直觉</h3><blockquote>
+<ul>
+<li><p>代表性启发直觉错误：当某种错误答案看上去更符合人们已知的事物时，会使人们倾向于选择这种答案</p>
+</li>
+<li><p>忽略基础比率直觉错误：忽略一个事件发生的基本概率</p>
+</li>
+<li><p>问题建构形式引起的直觉错误：在思维框架中问题被陈述的形式或问题构成的方式引起的直觉错误</p>
+</li>
+<li><p>情绪化导致的直觉错误</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="提高创造力"><a href="#提高创造力" class="headerlink" title="提高创造力"></a>提高创造力</h3><blockquote>
+<ul>
+<li><p>打破心理定势，挑战假定</p>
+</li>
+<li><p>扩展问题设定范围</p>
+</li>
+<li><p>用不同的方式表述问题</p>
+</li>
+<li><p>多纳信息广开思路</p>
+</li>
+<li><p>类比推理温故知新</p>
+</li>
+<li><p>认准目标敢于冒险</p>
+</li>
+<li><p>留出时间充分酝酿</p>
+</li>
+<li><p>自由发挥无论对错</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="情绪理论"><a href="#情绪理论" class="headerlink" title="情绪理论"></a>情绪理论</h3><blockquote>
+<ul>
+<li><p>詹姆斯-兰格理论：认为情绪的产生发生在身体唤起后，来自身体对唤起的意识</p>
+</li>
+<li><p>坎农-巴德理论：一种情绪理论，认为由于丘脑的激活，促使情绪体验和躯体唤起同时发生</p>
+</li>
+<li><p>沙赫特情绪认知理论：情绪是在对一种生理唤起进行特定的认知解释后产生的，这种解释可基于过去的经验或是环境线索</p>
+</li>
+<li><p>情绪性认知：对某一情景或刺激做出的个体意义的评价</p>
+</li>
+<li><p>面部表情反馈假说：认为面部表情提供的线索可以帮助当事人判断自己体验到的情绪</p>
+</li>
+<li><p>当代情绪理论模型：认知评价导致生理唤起、认知加工、行为、面部表情或姿势以及情绪体验。唤起、归因、行为和表情可影响情绪体验，情绪体验又可影响认知，而认知则又进一步影响唤起、行为、表情和情绪体验</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="阿德勒"><a href="#阿德勒" class="headerlink" title="阿德勒"></a>阿德勒</h3><blockquote>
+<ul>
+<li><p>追求卓越：根据阿德勒的学说，人的基本驱力是促使我们趋向完美</p>
+</li>
+<li><p>补偿：通过看到自己好的品质或在某方面的杰出表现来抵消自身的缺陷</p>
+</li>
+<li><p>生活方式：在生活中，由每个人的人格和行为方式所组成的独特的模式</p>
+</li>
+<li><p>创造性自我：我们体内的“艺术家”，它为我们创造了独一无二的自我和生活方式</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="霍妮"><a href="#霍妮" class="headerlink" title="霍妮"></a>霍妮</h3><blockquote>
+<ul>
+<li><p>基本焦虑：因为生活在一个充满敌意的世界里而所拥有的焦虑的主要形式</p>
+</li>
+<li><p>三种人际互动方式：接纳、逃避和攻击</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="荣格"><a href="#荣格" class="headerlink" title="荣格"></a>荣格</h3><blockquote>
+<ul>
+<li><p>人格面具：表现给公众看的人格</p>
+</li>
+<li><p>个体无意识：荣格理论中的概念，指个体无意识思维的心理储藏室</p>
+</li>
+<li><p>集体无意识：一个群体中每个人都有的某种无意识的观念和形象</p>
+</li>
+<li><p>原始意象：荣格理论中的概念，指集体无意识中的一种普遍的观念、形象或模式</p>
+</li>
+<li><p>阿尼玛：男性人格中的女性成分，是一种理想化的女性形象</p>
+</li>
+<li><p>阿尼姆斯：女性人格中的男性成分，是一种理想化的男性形象</p>
+</li>
+<li><p>自我原始意象：荣格理论中的概念，指一种表征统一、完整、圆满、平衡的无意识形象</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="马斯洛自我实现"><a href="#马斯洛自我实现" class="headerlink" title="马斯洛自我实现"></a>马斯洛自我实现</h3><blockquote>
+<p>高峰体验：伴随自我实现的一种短暂感受，感到了自己生命的价值，感到一种从未有过的开阔、力量、和谐、平静、光明和美好</p>
+</blockquote>
+<h3 id="如何促进自我实现发展进程"><a href="#如何促进自我实现发展进程" class="headerlink" title="如何促进自我实现发展进程"></a>如何促进自我实现发展进程</h3><blockquote>
+<ul>
+<li><p>形成改变自己的愿望</p>
+</li>
+<li><p>对自己负责</p>
+</li>
+<li><p>学会检查自己的动机</p>
+</li>
+<li><p>诚实接受现实</p>
+</li>
+<li><p>运用成功经验</p>
+</li>
+<li><p>做好与众不同的心理准备</p>
+</li>
+<li><p>融入事业</p>
+</li>
+<li><p>对自己的发展进行评价</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="人本主义的发展观"><a href="#人本主义的发展观" class="headerlink" title="人本主义的发展观"></a>人本主义的发展观</h3><blockquote>
+<ul>
+<li><p>价值标准：用于判断一个人的思维、行动、情感或经验价值的内部标准</p>
+</li>
+<li><p>机体评价：罗杰斯理论中的概念，指机体作为整体对某事件做出反应时，会以当时的知觉和情感为标准，赋予该经验一定的价值</p>
+</li>
+<li><p>用机体评价取代价值标准有助于达成相符状态和自我实现</p>
+</li>
+<li><p>一般适应综合征：由于长期紧张引发的一系列身体反应，包括三个阶段：警戒反应期、抗应期和耗竭期</p>
+</li>
+<li><p>警戒反应期：一般适应综合征的初期阶段，身体中的资源被动员起来，应对新出现的压力</p>
+</li>
+<li><p>抗应期：一般适应综合征的中期阶段，身体付出巨大的体内能量，对压力进行适应</p>
+</li>
+<li><p>耗竭期：一般适应综合征的后期阶段，体内能量已耗光，出现严重的健康受损后果</p>
+</li>
+<li><p>情绪应对策略：设法控制自己的情绪反应，以减轻压力感</p>
+</li>
+<li><p>问题应对策略：设法控制或改变造成心理压力的情景，以减轻压力</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="挫折反应"><a href="#挫折反应" class="headerlink" title="挫折反应"></a>挫折反应</h3><blockquote>
+<ul>
+<li><p>坚持行为：包括顽强努力和多重反应(迂回变通)</p>
+</li>
+<li><p>攻击行为：有意伤害某人或毁坏某物的行为</p>
+</li>
+<li><p>转移的攻击：将目标转向非挫折源的攻击行为</p>
+</li>
+<li><p>逃避：离开挫折情景或从心理上脱离(情感淡漠，服用镇静剂)，以减少不舒服感</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="心理冲突"><a href="#心理冲突" class="headerlink" title="心理冲突"></a>心理冲突</h3><blockquote>
+<ul>
+<li><p>双趋冲突：人或动物必须在两个有利选择中挑选一个的情景(易解决)</p>
+</li>
+<li><p>双避冲突：个体必须在两个不利选择中挑选其一(难解决)</p>
+</li>
+<li><p>趋-避冲突：面对的同一个目标或行动对其既有利又有害(核心特征：矛盾心理)</p>
+</li>
+<li><p>双重趋-避冲突：个体面临两个选择，而每一个选择中都包含有利因素和不利因素的情景</p>
+</li>
+<li><p>多重趋-避冲突：个体所面对的多个对其既有利又有害的目标</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="心理防御机制"><a href="#心理防御机制" class="headerlink" title="心理防御机制"></a>心理防御机制</h3><blockquote>
+<ul>
+<li><p>补偿：通过强调表现出某些有价值的特质来弥补自己客观存在的或主观的缺陷，或通过在其他方面取得卓越成就来弥补自己在某一方面的不足</p>
+</li>
+<li><p>否认：通过拒绝承认某一不愉快的事实来保护自己</p>
+</li>
+<li><p>幻想：通过拒绝承认某一不愉快的事实来保护自己</p>
+</li>
+<li><p>认同：发展出与自己尊敬的人类似的特点，通常用以弥补自己想象出的个人不足或失误</p>
+</li>
+<li><p>理智化：通过理智的思考或对话，对引起焦虑的威胁性情景进行解释，避免情绪反应</p>
+</li>
+<li><p>分离：通过严密的逻辑归纳，在认识上把那些矛盾的思想或感觉相互分离开，从而避免心理冲突</p>
+</li>
+<li><p>投射：把自己的感觉、缺点或不能接受的冲动强加到别人身上</p>
+</li>
+<li><p>合理化：通过寻找合理的、但不真实的理由，使自己的行为可以被接受</p>
+</li>
+<li><p>反向形成：通过夸张的、与自己实际意愿相反的行为来防止某些危险冲动在自己的行为中出现</p>
+</li>
+<li><p>退行：行为退行到早期发展水平，或表现出发展早期的不必要的行为习惯</p>
+</li>
+<li><p>压抑：潜意识地阻止痛苦的或危险的想法进入意识</p>
+</li>
+<li><p>升华：通过对社会有益的行为来摆脱无法实现的本能欲望或危险冲动</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="习得性无助"><a href="#习得性无助" class="headerlink" title="习得性无助"></a>习得性无助</h3><blockquote>
+<ul>
+<li><p>习得性无助：习得的不去克服困难或不会逃避惩罚的行为，对负性刺激习得的被动感及不作为反应</p>
+</li>
+<li><p>控制感训练：是使那些能够控制和把握危险环境的行动得到强化</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="心脏病人格"><a href="#心脏病人格" class="headerlink" title="心脏病人格"></a>心脏病人格</h3><blockquote>
+<ul>
+<li><p>A型人格：典型的A型人格者总觉得时间紧迫，容易生气和产生敌意，患心脏病的风险较高</p>
+</li>
+<li><p>B型人格：有着与A型人格相反的人格特征，平和随意，无意竞争，患心脏病的风险较低</p>
+</li>
+<li><p>坚毅人格：一种能够承受高压力的个性风格</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="心理障碍"><a href="#心理障碍" class="headerlink" title="心理障碍"></a>心理障碍</h3><blockquote>
+<ul>
+<li><p>精神病性障碍：以脱离现实、幻觉、妄想和社会退缩为特征的严重心理障碍</p>
+</li>
+<li><p>器质性心理障碍：由于脑部疾病或损伤造成的心理或情绪问题</p>
+</li>
+<li><p>心境障碍：严重的情绪或心境困扰，例如抑郁或躁狂</p>
+</li>
+<li><p>焦虑障碍：害怕、忧虑或焦虑等毁灭性感觉或与焦虑有关的扭曲行为</p>
+</li>
+<li><p>躯体形式障碍：有类似疾病或外伤的躯体症状，但体格检查未发现病因</p>
+</li>
+<li><p>解离性障碍：暂时性遗忘症、多重人格或人格解体</p>
+</li>
+<li><p>人格障碍：适应不良的人格类型</p>
+</li>
+<li><p>性及性别认同障碍：各种各样的性别认同困难、性变态行为和性适应问题</p>
+</li>
+<li><p>与药物有关的障碍：滥用或者依赖可改变情绪或行为的药物</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="妄想障碍"><a href="#妄想障碍" class="headerlink" title="妄想障碍"></a>妄想障碍</h3><blockquote>
+<ul>
+<li><p>妄想障碍：一种精神病，特点为有严重的夸大、嫉妒、被害等类似的妄想</p>
+</li>
+<li><p>偏执型精神病：一种妄想障碍，尤其是被害妄想</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="精神分裂症"><a href="#精神分裂症" class="headerlink" title="精神分裂症"></a>精神分裂症</h3><blockquote>
+<ul>
+<li><p>精神分裂症：一种精神病，特征是妄想、幻觉、情感淡漠、思想与情感分裂</p>
+</li>
+<li><p>解体型精神分裂症：一种精神分裂症，特征为行为缺乏一致性且非常混乱，思维怪异，情感漠然或者非常不适宜</p>
+</li>
+<li><p>紧张型精神分裂症：一种精神分裂症，特征为姿态僵硬，无反应，保持某种奇怪姿势，缄默，有时会出现激动和无目的行为</p>
+</li>
+<li><p>偏执型精神分裂症：一种精神分裂症，特征为专注于妄想或者常常有关某个主题的幻听，尤其是夸大或者被害主题</p>
+</li>
+<li><p>未分化型精神分裂症：指没有紧张型、解体型或偏执型精神分裂症的特定特征的精神分裂症</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="心境障碍"><a href="#心境障碍" class="headerlink" title="心境障碍"></a>心境障碍</h3><blockquote>
+<ul>
+<li><p>抑郁障碍：情感障碍，主要表现为悲伤、沮丧和抑郁</p>
+</li>
+<li><p>双相障碍：既有抑郁发作又有躁狂或轻躁狂发作的情感障碍</p>
+</li>
+<li><p>心境恶劣障碍：慢性抑郁障碍，是持续两年或更长时间的中度抑郁</p>
+</li>
+<li><p>环性心境障碍：持续两年或更长时间的中度躁狂和抑郁行为</p>
+</li>
+<li><p>双相Ⅰ障碍：患者既有躁狂发作，又会出现严重抑郁</p>
+</li>
+<li><p>双相Ⅱ障碍：患者以抑郁为主，但也会出现一次或者一次以上的轻度躁狂</p>
+</li>
+<li><p>内源性抑郁：其抑郁看上去是由于内在的原因(可能是因为脑组织中的化学物质不平衡)引起的，而不是对外部事件的反应</p>
+</li>
+<li><p>季节性情感障碍：只在秋冬季节发作的抑郁症，可能是由于日照时间缩短造成的</p>
+</li>
+<li><p>光照疗法：接受全光谱强光照射的一种针对季节性情感障碍的治疗方法</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="焦虑障碍"><a href="#焦虑障碍" class="headerlink" title="焦虑障碍"></a>焦虑障碍</h3><blockquote>
+<ul>
+<li><p>适应性障碍：由日常生活中的应激源导致的情绪障碍</p>
+</li>
+<li><p>广泛性焦虑障碍：一种针对工作、关系、能力或迫近灾难的持续性紧张和担忧的状态</p>
+</li>
+<li><p>惊恐障碍(不伴有广场恐怖症)：一种持续的焦虑状态，伴有短暂时刻的急性、强烈、意外的恐慌感</p>
+</li>
+<li><p>惊恐障碍(伴有广场恐怖症)：一种持续的焦虑状态和短暂的突发恐慌，患者担心会在公众场所或陌生情境中惊恐发作</p>
+</li>
+<li><p>广场恐怖症(不伴有惊恐障碍)：对于如果离开家或进入陌生场景将会发生极其尴尬的事情的恐惧</p>
+</li>
+<li><p>特定恐怖症：一种对特定物体、活动或情景的强烈的、不合理的恐惧</p>
+</li>
+<li><p>解离性遗忘症：失去有关个人身份重要信息的部分或全部记忆</p>
+</li>
+<li><p>解离性神游症：突然离家出走，并有对自己的个人身份认同的混淆</p>
+</li>
+<li><p>解离性认同障碍：存在两个或多个不同的人格</p>
+</li>
+<li><p>躯体化障碍：患者总是抱怨有非常多的身体不适症状，也看过很多医生，可是找不到任何器质性原因</p>
+</li>
+<li><p>疼痛障碍：无明确的生理原因，似乎由心理原因引起的疼痛</p>
+</li>
+<li><p>转换性障碍：看似是身体机能发生障碍，实际上却是由焦虑或情绪痛苦引起的身体症状</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>总览全书，处处闪现着科学的光辉，不同于现实生活中的伪心理学，如星座，塔罗牌这类缺乏实验证明和理论基础的伪科学，书中讲述了真正的心理学，真正的科学，虽然依旧是人类建构的学问，也算不上所谓的绝对客观，但相比伪心理学，无疑是距离真理更近了一步，仅仅是这一步的距离，就足以摒弃教人愚昧的学问，而倒向真理的怀抱了。依旧拿星座来举例，用巴纳姆效应和确认偏向便可轻易的将它拆解，普遍之于偶然显然是占据了优势，知识便这样破除了愚昧，这并不是一个反常识的，或者让人吃惊的结论，但是运用科学理论的否定显然比单靠否定词的否定更具说服力。即使星座是伪心理学，但也依旧要肯定其合理性，一元论的视野带来的局限性还是太大了，星座作为一种调剂，也作为一种安慰，甚至作为一种引人向积极方向发展的动力，依旧是具有正向的价值的。</p>
+<p>这本书在靠前的章节讲述了人脑的构造，也就是心理活动的物质基础，这部分与医学具有重合性，在之后的章节还讲述了心理学的各种理论派别，这又与社会工作这一专业具有重合性，虽然是陌生的领域，但在读到某些章节时，也能感受到亲切感，这充分展示了知识的联结，心理学究其本质来说，依旧是关于人的学问，人的复杂性决定了会有各种各样、分门别类的关于人的学问，而这些在学科上有所划分的知识，虽有其边界，但在本质上来说，皆是相互联结的，知识虽是无限的，但也称不上是恐怖的。心理学显然是一门以人为终极目的的学科，对人展开研究与关怀的科学，怎能不觉得它可爱呢？</p>
+<p>我觉得这本书难能可贵的一点是，在阐述诸多理论的同时，也提供了具体的方法，其中对于学习的阐述使我受益良多。强调过度学习和自律学习的重要性，系统地讲述记忆的原理，并提供改善记忆的策略，介绍记忆术，在复习中可能会存在前摄干扰和倒摄干扰的问题，这些新鲜的知识在让我兴奋的时候也使我冷静思考现实，并把相关理论应用到现实中去，包括广为人知的操作性条件反射，它不仅仅是一个实验或是一项理论，在现实生活中也具有极其广泛和深刻地应用，包括书中对睡眠和梦的阐述，对睡眠各个阶段的剖析，睡眠的作用，失眠的原因以及对应的策略，梦是如何产生的以及梦的意义，这些内容都无比地贴近现实生活，因此，从这个角度来说，这本书也称得上是人体使用指南了，从更具象的层面教导人认识自己，这是比抽象的思辨更有的放矢的一场体验。</p>
+<p>书中另我印象最深刻的其实是篇幅很小的一部分，它是心理防御机制，具体的机制我在笔记部分已经阐述，在此就不重复，这些机制让人离真实更加遥远，将这些防御机制具象化，我觉得它们像是浓雾，不具有确定的形状，在人没意识到的时候产生作用，让人很难审视清楚自己的行为，这让我感受到了恐惧与不安，身处局中的自己会被心安理得地欺骗，甚至是在无意识的情况下陷入这场骗局之中，但在自己的世界里，自己的行为与思想是一致的，自己整个人处在一种自洽的状态里，但事实果真如此吗？当自我被暴露在这个充斥着他者的世界里，这些由自己亲手铸就的高墙是否还能保持坚固，我认为是很困难的，他者不受这个自我的经历与经验束缚，他们能轻易寻找到壁垒的薄弱之处，并在不经意间击破这道屏障，自我便赤身裸体地暴露在人前。越多地使用自我欺骗，越多地筑起高墙，自我便越有安全感，但当这份虚假的安全感被刺破的时候，自我受到的冲击是难以想象的，这么看来，人果然是懦弱的，勇气也果然是难能可贵的，人不能选择何时开启心理防御机制，但是人可以选择去追求这种刺破，可以选择把自己赤身裸体地暴露在人前，高墙一次次的被摧毁，自我一次次地颤抖，人才能一点点地接近真实。在一个个寂静的深夜，开掘自己的内心，发现自己身处浓雾之中，发现自己始终超越不了自己的局限性，真正有勇气的人是不会就此止步的，既然自己无法洞穿这些迷雾，那就去寻找能刺破自己的他人，发现自己的懦弱、不堪与自私，勇气的光辉就在这种自杀式的追寻中闪耀。</p>
+<p>审视我自己，我当然也脱离不了这样的欺骗，但新一轮的刺破已经来临，痛苦与焦虑又一次笼罩了我，我不知道一次又一次的自我摧毁会不会让我变得更好，我只知道这样的欺骗会一直持续，我面对无数的他者时也依然是无力的，但是我能在此写下这些文字，就说明我还没有被击倒，似乎苦难总是多于欢乐，似乎苦难的力量也强于幸福，但那又怎样呢？人活着并不一定是为了追寻快乐，苦难能让人接近真实，苦难能让人振聋发聩，苦难能把人砸个粉碎，但也教人冷静和清醒，既然如此，那就大胆地去迎接苦难吧，不顾一切地去拥抱“死亡”吧。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E9%98%85%E8%AF%BB/">阅读</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/06/09/mihua/">
+                        <span class="hidden-mobile">米花之味，一“合”足矣</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/twikoo@1.3.0/dist/twikoo.all.min.js', function() {
+        twikoo.init({
+          el: '#twikoo',
+          envId: 'twikoo-0g5ghvjibfc3f076',
+          region: 'ap-shanghai',
+          path: 'window.location.pathname',
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
