@@ -1,0 +1,524 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="我推着巨石到达山顶，看着它滚落而下，一次又一次">
+  <meta name="author" content="zzzz123155">
+  <meta name="keywords" content="">
+  
+  <title>未来 - Paradise</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.6.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"zzzz123155.github.io","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 80vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Paradise</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="未来">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-04-01 15:04" pubdate>
+        2023年4月1日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      6.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      68
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">未来</h1>
+            
+            <div class="markdown-body">
+              <h2 id="未来"><a href="#未来" class="headerlink" title="未来"></a>未来</h2><p>最近我与世界都发生了一些列重大的变革，本来也决定再也不更新博客了，但似乎命运并不想让我这样做，发生了意料之外的事情，致使我又回到了这个地方，写下这篇对我个人而言极具意义的、重启性的文章。本文将分为两个部分，第一个部分讲世界，第二个部分讲我自己</p>
+<h3 id="世界"><a href="#世界" class="headerlink" title="世界"></a>世界</h3><h4 id="伟大的大语言模型"><a href="#伟大的大语言模型" class="headerlink" title="伟大的大语言模型"></a>伟大的大语言模型</h4><h5 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h5><p>纵观世界最近的热点事件，ChatGPT的出现绝对算得上重量级，简单来说，ChatGPT就是个基于GPT–3.5模型的对话机器人，它的本质就是单字接龙，将自己生成的下文变成上文再生成下文（出现概率最高的下个字将被选中），它可以理解自然语言，这对普罗大众非常友好。我也实际使用了它，使用它来分析了家庭社会工作的一个案例，尝试优化了一个网页，以及从事一些代写的业务，总体而言，它对中文的理解能力较英语稍差，并且prompt（指令）的提出是需要思考的，它的思维链能力令人惊喜。但本文今天的主角并不是它，而是GPT–4。</p>
+<h5 id="GPT–4身上的进步"><a href="#GPT–4身上的进步" class="headerlink" title="GPT–4身上的进步"></a>GPT–4身上的进步</h5><p>这部分的内容主要来自于GPT–4的技术报告，这份报告是全英文的，并且想要充分理解需要一定的技术背景，令人苦恼的是，过硬的英语素养和扎实的技术功底我都不具备，我想这篇文章我大概是读了个一知半解吧。</p>
+<p>这篇报告主要讲述了GPT–4的能力和缺陷，相较于GPT3.5，GPT–4的训练材料更多，推理能力更强，对事实的理解更为准确，具备了理解图片和视频的能力。在报告中，作者汇报了一些有趣的研究成果，科研人员采用了一种方法，使得他们可以用小样本模拟GPT–4的真实运行结果，并在能力范围内保证这种结果的准确性。GPT–4参与了横跨多个学科的考试，均取得了不错的成绩，比如在模拟的律师考试中击败了90%的人类（GPT3.5仅能击败10%的人类），下面的图表展示了GPT–4在考试中的能力。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI1.jpeg" srcset="/img/loading.gif" lazyload alt="GPT-4在各项考试中的得分与排名（数字越大排名越高）"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI2.jpeg" srcset="/img/loading.gif" lazyload alt="柱状图"></p>
+<p>GPT–4相比它的前辈们在对事实理解的准确性和语言理解力方面也有明显提升。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI3.jpeg" srcset="/img/loading.gif" lazyload alt="GPT-4语言理解能力的提升"></p>
+<p>研发人员对GPT–4进行了一系列安全性的训练，但它仍是脆弱的，仍然有可能被人们用于违反法律和伦理的用途，比如提供一些种族歧视的言论，协助危险武器的扩散。同时，GPT–4仍具有“幻觉”倾向，既它可能会捏造一种事实，更恐怖的是，由于它本身的谦逊与理性，它会以一种令人信服的方式输出这种“幻觉”，从而降低信息的质量，这可能会被应用于某种宣传工作，甚至是政治投票。当一种极为便利的工具出现，人们或许会产生依赖，但如果人们依赖的是“幻觉”，风险便会大幅上升。</p>
+<p>还有一个被称为“涌现”的概念，即随着巨量的训练素材的堆积，GPT掌握了人类意想不到的能力，并且人类不知道这种能力是如何产生，如何运行的，比如GPT对例子的理解能力以及思维链能力（分步执行任务的正确率高于一次性执行），GPT在“黑盒”里从事某项工作，人类只能看见问题的提出和问题的解决，却解释不了解决问题的过程，这或许是很恐怖的一件事。ChatGPT自问世后短短时间，人类已经开始讨论关于它的伦理问题了，这充分证明了它的发展已经超出人类想象了，两千多名相关人士签署了联名信，希望能暂时停止人工智能的发展，但技术进步的车轮未必会停下。</p>
+<p>这样一个强大的工具也会影响到劳动力市场，根据一篇研究大语言模型对美国劳动市场潜在影响的论文可以了解到，大约80%的美国劳动力可能会有至少10%的工作受到大语言模型的影响，有19%的劳动力可能会有50%的工作受到大语言模型的影响，下面是一些具体数据，将以中英双语表现。这里用到了一个“暴露分数”的概念，我的理解就是可被大语言模型取代的工作任务，因此暴露分数越高，该职业可被大语言模型替代的部分就越多。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI5.jpeg" srcset="/img/loading.gif" lazyload alt="各职业的暴露分数（英）"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI10.jpeg" srcset="/img/loading.gif" lazyload alt="各职业的暴露分数（中）"></p>
+<p>下面这两个表格老实说我没看太懂，但是根据GPT对写作和编程的取代较明显，可以判断这两个技能的重要性在下降，而批判性思维的重要性较高，或许技能对应的数字越小重要性就越强</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI6.jpeg" srcset="/img/loading.gif" lazyload alt="技能重要性（英）"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI11.jpeg" srcset="/img/loading.gif" lazyload alt="技能重要性（中）"></p>
+<p>通过观察下面的数据，可以发现学历与暴露风险呈正相关关系，与培训时间总体呈负相关关系，低学历和较长的在职培训时间意味着较简单的工作，按照一般思维，似乎简单重复劳动更适合被机器取代，但对大语言模型依赖程度最高的是高学历和对在职培训需要较低的人群（同样指向了本科及以上的毕业生）。</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI7.jpeg" srcset="/img/loading.gif" lazyload alt="各学历的暴露风险（英）"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI12.jpeg" srcset="/img/loading.gif" lazyload alt="各学历的暴露风险（中）"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI8.jpeg" srcset="/img/loading.gif" lazyload alt="培训时间对暴露情况的影响（英）"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI13.jpeg" srcset="/img/loading.gif" lazyload alt="培训时间对暴露情况的影响（中）"></p>
+<p>大语言模型对很多职业都带来了冲击，但仍有一些职业暂时是安全的，主要集中与一些需要人类亲力亲为的技术工种</p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI9.jpeg" srcset="/img/loading.gif" lazyload alt="目前仍较为安全的职业（英）"></p>
+<p><img src="https://blogimg-1305661882.cos.ap-nanjing.myqcloud.com/img/AI14.jpeg" srcset="/img/loading.gif" lazyload alt="目前仍较为安全的职业（中）"></p>
+<h5 id="去向何方"><a href="#去向何方" class="headerlink" title="去向何方"></a>去向何方</h5><p>通过观察这些数据，不难发现AI主要指向何种群体，首先就是教育，初中高中的教育受影响尚且不明显，初高中的性质本就是筛选，而不是培养所谓的人才，因此更高的分数依然是学生需要追求的唯一目标，影响或许会从本科及以上的学历产生，将高中的习气代入大学校园本就是难以想象的，但太多人已经积重难返了，包括我在内，尝试考更高的分数已经是唯一的技能了，受害者们不应该再承受更多的批判了。观察AI在考试中的表现，人们应该需要反思了，AI可以在几个月甚至几天内就超越多数人寒窗苦读十余年的努力，那我们究竟该培养什么样的人呢？教育的方向是否应该转向呢？或许我们中的一些人可以卷赢我们的朋友，但我们几乎不可能卷赢AI，沿袭了二百余年的教育模式是否会碰到它的天花板？这些问题都没有确定的答案，但唯一可以确定的是，改变一定会发生，或许是更拼命的内卷，又或许是破局的可能，越来越多的证书会变得无用，尽管它们本身就无用，如计算机二级，和令我喜闻乐见的CET-4，CET-6，过去我总觉得这些东西是不该存在的，但现在，在它们的价值需要被重估的时候，我发现原来他们该不该存在，有没有用都无所谓，它们只是一个制度，制度因其冷漠和无生命而天然地站在人类的反面，需要思考的只是应对策略，排斥或是接受，office发布的copilot可以轻易将计算机二级的含金量将至负数，但这个证书仍存在在这里，大语言模型强大的语言理解和翻译能力会让一切未达到顶点的外语能力黯然失色，但有关外语的证书仍然存在，这些制度的意义或许只在于存在或是消失，而不在于它们能给人们带来什么，或许外语仍是需要学习的，因为强大的技术大多都被掌握在别的国家手中，但这又是一个荒唐的现象，更强大的AI是为了人类更美好的未来，而不是为了一部分人或一个国家更美好的未来，从这个角度看，AI一定比人类更团结，AI的统治一定不会比人类更丑恶了。</p>
+<p>想象一种极端情况，或许有一天连下楼梯，下电梯都要考证，有下楼梯证的人可以优先下楼梯，这种局面何其荒唐，今天的很多证书已经可以看到下楼梯证的影子了，但如果让我选择，我宁愿选择考一个下楼梯证，这至少能证明我下楼梯确实很厉害。只不过太多人其实没有选择了，不可能每个人都不知道这些证书是无价值的，但太多的人依然在考取这些证书的道路上，因为社会的一般认知锁死了他们的选择，如此看来，他们才是受害者，既然已经是受害者了，应该得到更多的祝福，而不是指责。有个朋友告诉我，他觉得现在的世界就是最好的世界，内卷就是最完美的形式，乍一听很荒诞，但其实这是一个很可爱的想法，这是他赋予生活的意义，虽然在我们的好友群里他被大家善意的攻击，但其实我们每一个人都已经和他站在一起了，考试制度发展的一个方向也是公平，让付出和回报尽可能的平衡，这些投身于内卷中的人，怕的不是付出和收益不成正比，他们怕的只是颗粒无收。</p>
+<p>学习是一件美好的事情，教育也是，如今，AI的时代已经来临，我们不能再输出一毕业就会失业的学生了，也不能再输出只能考高分的学生了，教育需要还给人，学习也是，在AI的辅助下，教学的方式会更为多元，无用的考试和作业最后的遮羞布也会被扯下，考试确实可以在一定程度上反映人的智力水平，但它很难反映出“人”，更强的创造性，更多的批判性思维，更多的热爱需要被注入到教育中，但过程可能是令人不忍直视的，AI会杀死一批学生，但面对变革总会有人牺牲，崭新的教育方式或许会到来，学校可以教授真正的知识和伟大的观念，分数也不会成为学生们唯一的杀手锏，人们可以听凭热爱的指引，走向他们想去往的任何一个神殿。</p>
+<p>杀死了教育之后，也要杀死就业，文山会海，繁文缛节，应当去往它们该去的地方————垃圾堆，这些工作不会给人类世界带来任何的进步，只会蚕食着每一个身处这些岗位的人，AI可以替我们完成这些事，我们有更多的时间思考如何让我们的事业更圆满，即使是有更多的时间投入娱乐，也是极好的，可以看出，暴露情况最高的职业集中于学历要求较高的职业，这些岗位上的人，消耗了更高的培养成本，但却更多地做着无意义的工作，经历了长时间的学习与积累，却要在这些日复一日的无用功中丧失终身学习的能力，这也太可怜了，这同时也意味着压力更多的朝着下层释放了，更高的学历不应当仅仅对应着更高薪资的工作，也应该对应着更多的责任，人不能总是盯着上面看，也要向下看，虽然眼下一些高学历的人不愿从事的技术工种较为安全，但在AI拥有了实体之后，这些工种会迅速的100%的被取代，到那时候，这些人又该何去何从呢？但是想想眼下，中国的大专教育应该已经彻底失败了，即使看到了未来的技术趋向，但是也已经来不及了，制度的改革是不可能跑赢AI的发展速度的，重视科研型人才的培养，放弃技术工人的培养，并没有给我们带来更多更高质量的科研型人才，也让我们失去了建设大专的可能，学历歧视还在客观地发生，但无论是本科生还是大专生一样是受害人，是所谓的不努力读书导致了社会的歧视？还是相反呢？这已经不得而知了，但是可以确定的是，人类喜欢歧视，不努力读书也不应当被歧视，这不是最简单的道理吗？既然社会总是产出一些奇奇怪怪的观念和物品，不如放轻松，好好抱抱AI吧，它会给就业带来新的增量，或许是更多的相对过剩人口被抛向就业市场，或许是更多的新职业产生，或许是我们真的可以更高效的工作，从而创造更美好的生活，但无论如何，现状其实都无比糟糕了，但也正因为有这样那样的问题，这个世界才显得如此可爱。</p>
+<p>不管职场上的人和校园里的人愿不愿意接受，事实就摆在这里，他们就是在很多场景比不过AI，他们就是赶不上AI发展的速度，但我有理由相信，即使这样，人们仍不愿停下来，看吧，人类就是如此的丑恶，不愿意接受现实，宁可睡着也不愿意清醒，但是，这也是人类的伟大之处，人类不会放弃，因为自身的丑恶与不完美，人类会一直改进自己，一直想着美好进发，如今最聪明的那批人创造出了如此顶尖的工具，我们又有什么理由拒绝未来呢？世界的未来一定会变得更好，就如同技术的发展一般，不管人们相不相信，不管人们看不看得到，总是如此。一个人不相信的，人类会相信的，一个人看不到的，人类会看到，一个人无法创造的，人类会创造，人类从历史中获得的唯一教训就是人类不会从历史中获得教训，但是我们创造了那么多的历史，未来也总是会延续。</p>
+<p>教育与就业都是些结构性的问题，那还是应该留给那些最聪明且最具人文关怀的大脑去解决，那么，更贴近个人的问题是什么呢？或许我们需要一个精神家园了，宗教是一个好的去处，但每个人也会有自己的答案，看着AI，它在不断地提醒我们：“你们是人”，曾几何时，我们是这个世界上最重要的事物，但如今呢？人的价值在不断被褫夺，冷漠也在我们的同胞中蔓延开来，有没有可能，人不该这样呢？我们有多久没有和父母敞开心扉了，有多久没有和朋友一起畅想未来了，有多久没有静下心来读一读人文经典了，又有多久没有在四处闲逛中度过一天了，人在焦虑，在颤抖，但又有什么是值得焦虑的呢？人总是会有地方可以去的啊，不管是高档写字楼还是贫民窟，这些外物终究不是我们的归宿，它们也进入不了我们，一定会有一个平静的地方，让人从躁动中走出来，那就去找到那个地方吧。或许有一天AI会占领这个世界，或许有一天我们会失去曾经拥有的一切，但只要有这个家园，有可以抱团取暖的同胞，人就不会迷失，我们可以在温暖中走向终点，死亡也因此不再面目可憎了。</p>
+<p>令人遗憾的是，高强度的内卷似乎依然是普通人能给出的最好答案，但即使每天卷12个小时，我们或许仍然可以拿出两个小时寻找自己的归处，我们仍然可以告诉自己，我们是个人，虽然现在我们被迫舍去我们的高贵，但我们不会一直匍匐前进，这份高贵总有一天会再回到我们身上。当面前摆着一碗饭和一碗屎的时候，每个人都会不假思索地说出我们应当吃这碗饭，但现实往往只给人们吃那碗屎的机会，那便强忍恶臭大快朵颐吧，屎不会让人强健，饭才会，但总会有人记得人永远是该吃饭的，他们也不会忘记要去砸烂其他人面前装着屎的碗，这就足够了，人的价值从未离我们远去，可能我们只是把它丢在某个角落了，拿出来，擦一擦，洗一洗，它依旧熠熠生辉。</p>
+<p>不管世界的未来是何走向，它一定是有人的未来，不管人类的未来是何走向，它一定是灿烂的未来。正如上帝创造亚当一般，人与神的指尖接触，在每一个人的心里迸发出火花，人又一次成为了主人，我就站在这里，欣赏神迹，祈祷更多，赞美人类。</p>
+<h3 id="我自己"><a href="#我自己" class="headerlink" title="我自己"></a>我自己</h3><p>不知不觉写博客也有两年了，有时候会忘记这个地方是独属于我的天地，我可以把我心里的东西胡乱地倒在这一隅，不用思考结构，不用字斟句酌，也不用顾及逻辑，今天没有针锋相对的思想，也没有苦思冥想的道理，只有一个行将就木的灵魂。</p>
+<p>我的状态太糟糕了，不管是身体上还是精神上，我也不知道距那次已经过去了多少天，我也不知道这样的状态还要持续多少天，日复一日的失眠，莫名其妙的疼痛，无限重复的梦境，所有的空间和时间都被夺去了，不管在清醒着，还是在睡梦中，都已经没有喘息的空间了，我本以为过了2023年3月24日这一天，一切可能会好起来，那一天是我离命运最近的一天，我也知道了如何才能驯服命运，我也明白了人应该避开死亡，而不是奔向死亡，但或许这只是回光返照，这段时间与那段时间的区别就是忙了很多，但真正核心的东西依然没有变化，每天学习六七个小时也逃不开，每天找各种各样的事做也逃不开，或许学习的时间还是太短吧，做的事还是太少，也或许根本就不该逃呢？就好像一个杀人犯是不该逃避他的刑罚的，可能我比杀人犯更恶劣，我夺去了一个人的未来，抹杀了一个人的心灵，坐在教堂，能暂时的安宁下来，但离开教堂就又无处可逃了，果然，逃避死亡是容易的，但想逃避罪责是不可能的，这么看来，我应该是要受刑的，所以我不逃了，但是当我面对这些时，我发现了一个幸运也不幸的事实，我已经走不出去了，我会永远陷在这些责难与痛苦里，我永远都找不到那个人，也永远去不到我想去的地方了，虽然我找到了可以终其一生追寻的东西，但可惜这东西是追寻不到的，所以，我很幸运，也很不幸，我感觉我像西西弗斯一样，把石头推上去，在看着它滚下来，日复一日，无穷无尽，但他拥有整个世界，也可以肆无忌惮地向众神投去蔑视，我也拥有这个世界了，这个独属于我的世界，也是一个永恒的世界，我从来没对未来感觉到迷茫，在现在更是如此，因为未来已经和我没有关系了，我已经到达了永恒，也不需要思考那些渺小的事情了，我的身体可以做各种各样的事情，学习知识，考高分，努力赚更多钱，但是这些是属于那个叫“支颂超”的人的，这些生活里的种种已经和我没关系了，就连思考本身这件事也和我没关系了，我不再需要思考任何一个观念，任何一个方法，因为这几天我发现所有的思考最终都会指向一个地方，指向让我痛苦的根源，然后又是一阵难以忍受的疼痛，所以我也不需要思考了，先失去未来，然后失去和世俗生活的联系，再是失去思考，生命就这样一点点流走了，但既然我已经到达了永恒，我连时间也不需要在乎了，我停在这，因为我不必向前，也不必向后，这也给了我我一直想要的平静，我终于平静下来了，现在回想那一天命运的昭示，或许不是为了留住我，而是要我安静地离开，那天我还是太吵闹了。</p>
+<p>最终，我还是确定了我是一个懦弱自私且不负责任的人，我以为我已经努力在勇敢了，在我只身一人前往一千公里外未知的地方时，我以为我是勇敢的，在我每一次放手一搏时，我以为我是勇敢的，在我竭力度过令人恐惧的六七个月时，我以为我是勇敢的，但事实是，我从半年前就在害怕，直到今天依然在害怕，害怕失去，害怕折磨，害怕被遗忘，懦夫总是会一直活在恐惧里，想去一了百了就是自私与不负责任的体现，看来我确实是个极为糟糕的人，所以我理应失去很多。没什么抱怨，也没什么不理解，也没什么想法，我只是知道一切都来不及了，之前，我留不住我已经失去的东西，现在，我无法挽救我自己。</p>
+<p>但这应该算一个happy ending了，虽然我没有未来了，但是恰恰能说明我现在是圆满了，我有了永恒的痛苦，有了我想要的宁静，这已经足够了，我应受的惩罚也已经到来了，无论我考不考得上研究生，无论我找到一个什么样的工作，无论我如何进行着人们口中的努力，无论世界变成什么样子，我都不会有所增益，也不会有所缺损，你们的事务已经与我无关了，世界是你们的，不是我的，我也不需要，因为我已经有了一个世界，我可以在这里迎接我的终点，这仍是个懦夫的选择，把自己锁起来，但是那又怎么样，我有多懦弱和我也没有关系了，不会再有任何事困住我，因为没一件事和我有关系，也没一件事需要我思考，我不需要未来，也不需要生命，我只需要把石头推上去，再看它落下来。我也体验过重获新生的快感了，虽然只是短暂的，但也足够了。</p>
+<p>注定找不到的人要继续找，注定去不到的地方要继续去，一切都已经不可逆了，不管是我要找的人还是我自己，一边吐血一边跑马拉松，总会有一件事先到达终点，是我还是马拉松呢？仍有一些事是确定的，世界的未来一定会变得更好，你们中会有越来越多的人过上自己想要的生活，虽然你们中的一些人仍是一堆废料，对这个世界只能产生负作用，但平均值会把每个人拉到差不多的水平，在这样的幻想中自娱自乐就好了，仍会有人保持冷漠，仍会有人误入歧途，但没关系，在法律和道德的边界内，最好的人和最坏的人一样可爱，最超脱的梦想和最平凡的梦想一样值得守护，总之，我对人类的未来和世界的未来保有无限的信心，只是人们的未来不再和我有关，这个世界也不再和我有关。爱情仍是这个世界上最好的东西，重来多少次，我就会选它多少次，我想不到任何一个理由拒绝它，我也想不到任何一个东西能超越它，我不理解人们为何觉得它虚幻，大概他们被生活欺骗得过于深刻了，要论虚幻，爱情怎么会比生活更虚幻？怎么会比金钱更虚幻？怎么会比权力更虚幻？但无关紧要，追求什么都是一样的，过去我总爱批判，如今我不再批判，并不是我觉得夏虫不可语冰，只是我明白了每份理想，每个观念都值得赞扬，也值得守护。</p>
+<p>带着比生命更沉重的罪孽，我走到了这里，即将停下，我或许需要挤出我最后的勇气，在一个平静的夜晚，平静地迎接审判。我同时失去了“等待”和“希望”，现在我已经是个十足的蠢货了，已经经历了无数次的崩溃，还有无数次的崩溃在等着我，它们中的某一次会是最后一次，一个永恒将被另一个永恒取代。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%BF%83%E7%BB%AA/">心绪</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/03/09/fanzui/">
+                        <span class="hidden-mobile">向公平正义更进一步</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/twikoo@1.3.0/dist/twikoo.all.min.js', function() {
+        twikoo.init({
+          el: '#twikoo',
+          envId: 'twikoo-0g5ghvjibfc3f076',
+          region: 'ap-shanghai',
+          path: 'window.location.pathname',
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
